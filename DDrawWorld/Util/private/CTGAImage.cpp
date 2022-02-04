@@ -43,6 +43,8 @@ namespace Util
 		{
 			m_bytePerPixel = 2;
 			const uint32_t dwWidthBytes = header.width * 2;
+			UNREFERENCED_PARAMETER(dwWidthBytes);
+
 			uint32_t line = header.height;
 
 			for (int y = 0; y < header.height; ++y)

@@ -29,8 +29,10 @@ workspace "HelloWorld"
 ----------------------------------
 project "Util"
    targetdir "_PremakeGenerated/bin/%{cfg.buildcfg}"
-   kind "StaticLib"
-   
+   kind "SharedLib"
+   defines     {"F_SHARED_COMPILE"}
+
+   systemversion("latest") -- Properties> General> Windows SDK Version 
 
    includedirs {"Common/public"}
    files       {"Common/public/**.h"}
@@ -55,7 +57,8 @@ project "Util"
 ----------------------------------
 project "ImageData"
    targetdir "_PremakeGenerated/bin/%{cfg.buildcfg}"
-   kind "StaticLib"
+   kind "SharedLib"
+   defines     {"F_SHARED_COMPILE"}
 
 
    includedirs {"Common/public"}
@@ -81,8 +84,9 @@ project "ImageData"
 ----------------------------------
 project "DDrawLib"
    targetdir "_PremakeGenerated/bin/%{cfg.buildcfg}"
-   kind "StaticLib"
-   
+   kind "SharedLib"
+   defines     {"F_SHARED_COMPILE"}
+
    -- systemversion: https://github.com/premake/premake-core/issues/935
    -- systemversion("10.0.19041.0") -- Properties> General> Windows SDK Version 
    systemversion("latest") -- Properties> General> Windows SDK Version 
@@ -118,7 +122,7 @@ project "DDrawSample"
    targetdir "_PremakeGenerated/bin/%{cfg.buildcfg}"
    kind "WindowedApp"
    
--- implibdir ("_PremakeGenerated/bin/%{cfg.buildcfg}")    -- for .dll -- default - sameas targetdir
+   implibdir ("_PremakeGenerated/bin/%{cfg.buildcfg}")    -- for .dll -- default - sameas targetdir
    libdirs     {"_PremakeGenerated/bin/%{cfg.buildcfg}"}  -- for .lib
    links       {"Util",        "DDrawLib",        "ImageData"}
    includedirs {"Util/public", "DDrawLib/public", "ImageData/public"}

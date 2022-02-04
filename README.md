@@ -17,6 +17,10 @@ interpolation
 
 
 0번압축 - 비교할 키 칼라(투명효과를 나타내기 위한 색, 보통 0,0 좌표)를 압축
+  - https://megayuchi.com/2017/06/15/gamedev-voxel%EC%9D%98-%EC%BB%AC%EB%9F%AC%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%95%95%EC%B6%95/
+  - https://megayuchi.com/2017/06/16/gamedev-voxel-horizon-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%BB%A4%EB%9F%AC-%ED%85%8C%EC%9D%B4%EB%B8%94-rle%EC%95%95%EC%B6%95-in-server/
+  - https://www.slideshare.net/dgtman/voxel-based-gameoptimazationrelelase
+  
 CTGAImage에서 `w * h * 4byte`로 4byte(rgba - 32bit)컬러로 저장하고
 CImageData 에서 
   비교할 키 칼라와 같은 색은 건너 뛰면서, 다른 색을 마주치면 PIXEL_STREAM을 만듬

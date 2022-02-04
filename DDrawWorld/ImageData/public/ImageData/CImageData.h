@@ -10,7 +10,7 @@ namespace ImageData
 
 #pragma pack(push,4)
 	// 8 = 2/2/4
-	struct PIXEL_STREAM
+	struct SHARED_API PIXEL_STREAM
 	{
 		uint16_t posX;
 		uint16_t sameColorCount;
@@ -21,7 +21,7 @@ namespace ImageData
 #pragma pack(pop)
 
 	// 16 = 4/4/8
-	struct COMPRESSED_LINE
+	struct SHARED_API COMPRESSED_LINE
 	{
 		uint32_t pixelStreamCount;
 		uint32_t usedByteCount;
@@ -34,14 +34,18 @@ namespace ImageData
 	};
 	static_assert(sizeof(COMPRESSED_LINE) == 16);
 
-	class CImageData final
+	class SHARED_API CImageData final
 	{
 	private:
 		int m_width = 0;
 		int m_height = 0;
 
+#pragma warning(push)
+#pragma warning(disable: 4251)
 		// m_compressedImageBytes: [COMPRESSED_LINE * imgHeight | PIXEL_STREAM ... ]
 		std::unique_ptr<std::byte[]> m_compressedImageBytes = nullptr;
+#pragma warning(pop)
+
 	public:
 		CImageData() = default;
 		~CImageData() = default;

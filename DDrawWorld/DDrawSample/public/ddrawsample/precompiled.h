@@ -54,3 +54,4 @@
 #include <cassert>
 #include <memory>
 #include <algorithm>
+#include <Common/sharedapi.h>

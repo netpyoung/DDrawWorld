@@ -49,3 +49,4 @@
 #include <cstdio>
 #include <memory>
 #include <cstdint>
+#include <Common/sharedapi.h>

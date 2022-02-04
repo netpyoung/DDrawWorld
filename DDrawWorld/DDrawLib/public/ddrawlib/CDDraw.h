@@ -11,7 +11,7 @@ namespace ImageData
 
 namespace DDrawLib
 {
-	class CDDraw final
+	class SHARED_API CDDraw final
 	{
 	private:
 		::HWND m_hWnd = nullptr;

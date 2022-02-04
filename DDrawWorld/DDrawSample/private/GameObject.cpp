@@ -57,6 +57,7 @@ namespace DDrawSample::GameObject
 
 		int2 pos = flightObject->GetPos();
 		const int move_x = (rand() % 3) - 2;
+		UNREFERENCED_PARAMETER(move_x);
 		if (pos.x < 0)
 		{
 			pos.x = 0;
