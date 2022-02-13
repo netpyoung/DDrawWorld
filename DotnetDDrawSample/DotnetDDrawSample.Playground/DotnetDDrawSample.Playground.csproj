@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<!--<Nullable>enable</Nullable>-->
+		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+		<!--<EnableNETAnalyzers>False</EnableNETAnalyzers>-->
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<RunWorkingDirectory>$(MSBuildProjectDirectory)</RunWorkingDirectory>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="TerraFX.Interop.Windows" Version="10.0.20348" />
+	</ItemGroup>
+</Project>
