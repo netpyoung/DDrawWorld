@@ -19,7 +19,7 @@ namespace DotnetDDrawSample.Playground
 
         int _renderCurrFPS = 0; // FramesPerSecond
         int _renderPrevFPS = 0;
-        long _renderRecalculateFPSlastTick = 0;
+        ulong _renderRecalculateFPSlastTick = 0;
         int _renderFrameCount = 0;
         private long _prevQueryPerformanceCount = 0;
         private bool _isDDrawInitialized = false;
@@ -526,12 +526,12 @@ namespace DotnetDDrawSample.Playground
             FillEnemies(screenWidth, screenHeight);
         }
 
-        static long s_PrvEnemyMoveTick = 0;
-        static long s_PrvFillEnemyTick = 0;
+        static ulong s_PrvEnemyMoveTick = 0;
+        static ulong s_PrvFillEnemyTick = 0;
 
         private void MoveEnemies(int screenWidth, int screenHeight)
         {
-            long currTick = Stopwatch.GetTimestamp();
+            ulong currTick = _timer.GetTick();
             if ((currTick - s_PrvEnemyMoveTick) < Const.ENEMY_MOVE_ACTION_DELAY_TICK)
             {
                 return;
@@ -551,7 +551,7 @@ namespace DotnetDDrawSample.Playground
                 return;
             }
 
-            long currTick = Stopwatch.GetTimestamp();
+            ulong currTick = _timer.GetTick();
             if ((currTick - s_PrvFillEnemyTick) < Const.ENEMY_REFILL_TICKS)
             {
                 return;
@@ -586,9 +586,9 @@ namespace DotnetDDrawSample.Playground
 
         private bool CheckFPS()
         {
-            long currTick = Stopwatch.GetTimestamp();
-            long diffTick = currTick - _renderRecalculateFPSlastTick;
-            if (diffTick < Stopwatch.Frequency)
+            ulong currTick = _timer.GetTick();
+            ulong diffTick = currTick - _renderRecalculateFPSlastTick;
+            if (diffTick < 1000)
             {
                 _renderFrameCount++;
                 return false;
