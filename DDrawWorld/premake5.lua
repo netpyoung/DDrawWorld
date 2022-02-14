@@ -118,7 +118,7 @@ project "DDrawLib"
 -- DDrawSample
 ----------------------------------
 project "DDrawSample"
-   debugdir "./"
+   debugdir "./RunWorkingDirectory/"
    targetdir "_PremakeGenerated/bin/%{cfg.buildcfg}"
    kind "WindowedApp"
    
