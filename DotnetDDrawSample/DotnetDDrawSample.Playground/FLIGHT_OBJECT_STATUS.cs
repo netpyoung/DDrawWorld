@@ -1,4 +1,4 @@
-﻿namespace DotnetDDrawSample.Core
+﻿namespace DotnetDDrawSample.Playground
 {
     public enum FLIGHT_OBJECT_STATUS
     {

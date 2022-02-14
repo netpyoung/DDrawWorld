@@ -1,13 +1,14 @@
-﻿using System;
+﻿using DotnetDDrawSample.Utils;
+using System;
 
-namespace DotnetDDrawSample.Core
+namespace DotnetDDrawSample.Playground
 {
     public static class GameObject
     {
 
         static Random rand = new Random();
 
-        public static FlightObject CreatePlayer(in ImageData imageData, in int x, in int y, in int speed)
+        public static FlightObject CreatePlayer(in ImageData.ImageData imageData, in int x, in int y, in int speed)
         {
             FlightObject obj = new FlightObject();
             obj.SetImageData(imageData);
@@ -17,7 +18,7 @@ namespace DotnetDDrawSample.Core
             return obj;
         }
 
-        public static FlightObject CreateAmmo(in FlightObject flightObject, in ImageData pImgData, in int speed)
+        public static FlightObject CreateAmmo(in FlightObject flightObject, in ImageData.ImageData pImgData, in int speed)
         {
             int2 pos = flightObject.GetPos();
 
@@ -29,7 +30,7 @@ namespace DotnetDDrawSample.Core
             return obj;
         }
 
-        public static FlightObject CreateEnemyRandom(in ImageData imageData, in int screenWidth, in int screenHeight, in int speed)
+        public static FlightObject CreateEnemyRandom(in ImageData.ImageData imageData, in int screenWidth, in int screenHeight, in int speed)
         {
             int pos_x = rand.Next() % (screenWidth - imageData.Width);
 

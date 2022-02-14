@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DotnetDDrawSample.ImageData;
+using DotnetDDrawSample.Utils;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.CompilerServices;
@@ -25,9 +27,9 @@ using RECT = TerraFX.Interop.Windows.RECT;
 using SIZE = TerraFX.Interop.Windows.SIZE;
 using Windows = TerraFX.Interop.Windows.Windows;
 
-namespace DotnetDDrawSample.Core
+namespace DotnetDDrawSample.DDrawLib
 {
-    internal unsafe class DDraw : IDisposable
+    public unsafe class DDraw : IDisposable
     {
         private TerraFX.Interop.Windows.ComPtr<IDirectDraw> _dd = null;
         private TerraFX.Interop.Windows.ComPtr<IDirectDraw7> _dd7 = null;
@@ -147,7 +149,7 @@ namespace DotnetDDrawSample.Core
             return true;
         }
 
-        internal void CaptureBackBuffer(FileStream f)
+        public void CaptureBackBuffer(FileStream f)
         {
             if (_ddBack.Get() == null)
             {
@@ -407,7 +409,7 @@ namespace DotnetDDrawSample.Core
         #endregion // GDI
 
         // -------------------
-        internal bool DrawBitmap(int startX, int startY, int imgWidth, int imgHeight, byte[] imgBytes)
+        public bool DrawBitmap(int startX, int startY, int imgWidth, int imgHeight, byte[] imgBytes)
         {
             int2 ivPos = new int2(startX, startY);
             int2 ivImageSize = new int2(imgWidth, imgHeight);
@@ -447,7 +449,7 @@ namespace DotnetDDrawSample.Core
         }
         // ---------
 
-        internal bool DrawImageData(in int startX, in int startY, in ImageData imageData)
+        public bool DrawImageData(in int startX, in int startY, in ImageData.ImageData imageData)
         {
             int iScreenWidth = Width;
 

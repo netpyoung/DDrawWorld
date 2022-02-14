@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace DotnetDDrawSample.Core
+namespace DotnetDDrawSample.Utils
 {
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
     public struct int2

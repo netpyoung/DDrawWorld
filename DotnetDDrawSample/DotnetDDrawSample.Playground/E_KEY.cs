@@ -1,4 +1,4 @@
-﻿namespace DotnetDDrawSample.Core
+﻿namespace DotnetDDrawSample.Playground
 {
     public partial class Game
     {

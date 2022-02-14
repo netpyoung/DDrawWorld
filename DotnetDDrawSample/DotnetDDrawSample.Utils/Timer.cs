@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using Windows = TerraFX.Interop.Windows.Windows;
 using LARGE_INTEGER = TerraFX.Interop.Windows.LARGE_INTEGER;
 
-namespace DotnetDDrawSample.Core
+namespace DotnetDDrawSample.Utils
 {
     public class Timer : IDisposable
     {

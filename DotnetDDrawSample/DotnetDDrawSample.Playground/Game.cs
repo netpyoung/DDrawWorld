@@ -5,8 +5,11 @@ using System.IO;
 using HDC = TerraFX.Interop.Windows.HDC;
 using HWND = TerraFX.Interop.Windows.HWND;
 using VK = TerraFX.Interop.Windows.VK;
+using DotnetDDrawSample.Utils;
+using DotnetDDrawSample.ImageData;
+using DotnetDDrawSample.DDrawLib;
 
-namespace DotnetDDrawSample.Core
+namespace DotnetDDrawSample.Playground
 {
     public partial class Game
     {
@@ -24,9 +27,9 @@ namespace DotnetDDrawSample.Core
         bool[] isKeyDowns = new bool[4];
 
         private Util.TGAImage _backgroundImage = new Util.TGAImage();
-        private ImageData _playerImageData = new ImageData();
-        private ImageData _ammoImageData = new ImageData();
-        private ImageData _enemyImageData = new ImageData();
+        private ImageData.ImageData _playerImageData = new ImageData.ImageData();
+        private ImageData.ImageData _ammoImageData = new ImageData.ImageData();
+        private ImageData.ImageData _enemyImageData = new ImageData.ImageData();
 
         private FlightObject _player = null;
         private int _currEnemyNum = 0;

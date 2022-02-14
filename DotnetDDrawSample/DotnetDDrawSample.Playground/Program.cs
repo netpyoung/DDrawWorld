@@ -1,4 +1,4 @@
-﻿using DotnetDDrawSample.Core;
+﻿using DotnetDDrawSample.Playground;
 using System.Runtime.InteropServices;
 using CS = TerraFX.Interop.Windows.CS;
 using HDC = TerraFX.Interop.Windows.HDC;

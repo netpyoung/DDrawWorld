@@ -1,4 +1,4 @@
-﻿namespace DotnetDDrawSample.Core
+﻿namespace DotnetDDrawSample.Playground
 {
     public static class Const
     {

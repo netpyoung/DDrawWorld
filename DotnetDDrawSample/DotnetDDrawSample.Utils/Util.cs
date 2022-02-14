@@ -3,7 +3,7 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace DotnetDDrawSample.Core
+namespace DotnetDDrawSample.Utils
 {
     public static partial class Util
     {
@@ -24,7 +24,7 @@ namespace DotnetDDrawSample.Core
             public byte Descriptor;
         };
 
-        internal static unsafe void WriteTGAImage(FileStream f, byte* srcBytes, int width, int height, int pitch, int bpp)
+        public static unsafe void WriteTGAImage(FileStream f, byte* srcBytes, int width, int height, int pitch, int bpp)
         {
             int imgByteCount = width * height * 3;
             byte[] byteBuffer = new byte[imgByteCount];
@@ -107,7 +107,7 @@ namespace DotnetDDrawSample.Core
             f.Write(bytebufferSpan);
         }
 
-        internal static bool CalcClipArea(out int2 pivOutSrcStart, out int2 pivOutDestStart, out int2 pivOutDestSize, int2 pivPos, int2 pivImageSize, int2 pivBufferSize)
+        public static bool CalcClipArea(out int2 pivOutSrcStart, out int2 pivOutDestStart, out int2 pivOutDestSize, int2 pivPos, int2 pivImageSize, int2 pivBufferSize)
         {
             int dest_start_x = Math.Clamp(pivPos.x, 0, pivBufferSize.x);
             int dest_end_x = Math.Clamp(pivPos.x + pivImageSize.x, 0, pivBufferSize.x);

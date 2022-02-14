@@ -2,11 +2,11 @@
 using System.IO;
 using System.Runtime.CompilerServices;
 
-namespace DotnetDDrawSample.Core
+namespace DotnetDDrawSample.Utils
 {
     static partial class Util
     {
-        internal class TGAImage : IDisposable
+        public class TGAImage : IDisposable
         {
             private int m_bytePerPixel = 0;
             public int Width { get; private set; }

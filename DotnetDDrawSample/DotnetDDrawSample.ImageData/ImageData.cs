@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace DotnetDDrawSample.Core
+namespace DotnetDDrawSample.ImageData
 {
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
     public struct PIXEL_STREAM

@@ -1,6 +1,7 @@
 ﻿using System;
+using DotnetDDrawSample.Utils;
 
-namespace DotnetDDrawSample.Core
+namespace DotnetDDrawSample.Playground
 {
     public class FlightObject
     {
@@ -8,7 +9,7 @@ namespace DotnetDDrawSample.Core
         int2 m_curPos = new int2(0, 0);
         int2 m_interpolatedPos = new int2(0, 0);
 
-        ImageData m_imageData = null;
+        ImageData.ImageData m_imageData = null;
         FLIGHT_OBJECT_STATUS m_status = FLIGHT_OBJECT_STATUS.ALIVE;
         ulong m_deadTick = 0;
         int m_speed = 0;
@@ -37,11 +38,11 @@ namespace DotnetDDrawSample.Core
         {
             m_status = status;
         }
-        public ImageData GetImageData()
+        public ImageData.ImageData GetImageData()
         {
             return m_imageData;
         }
-        public void SetImageData(ImageData imageData)
+        public void SetImageData(ImageData.ImageData imageData)
         {
             m_imageData = imageData;
         }

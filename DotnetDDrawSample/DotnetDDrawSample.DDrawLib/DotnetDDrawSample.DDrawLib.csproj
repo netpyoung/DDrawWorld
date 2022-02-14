@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="TerraFX.Interop.Windows" Version="10.0.20348" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\DotnetDDrawSample.ImageData\DotnetDDrawSample.ImageData.csproj" />
+	  <ProjectReference Include="..\DotnetDDrawSample.Utils\DotnetDDrawSample.Utils.csproj" />
+	</ItemGroup>
+</Project>
