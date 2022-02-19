@@ -1,5 +1,5 @@
 #pragma once
-#include "ddrawsample/precompiled.h"
+#include "ddrawsample/precompiled_ddrawsample.h"
 #include "Common/math.h"
 #include "ddrawsample/Const.h"
 

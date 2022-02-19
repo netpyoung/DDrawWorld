@@ -1,4 +1,4 @@
-#include "ddrawsample/precompiled.h"
+#include "ddrawsample/precompiled_ddrawsample.h"
 #include "ImageData/CImageData.h"
 #include "ddrawsample/GameObject.h"
 #include "ddrawsample/CFlightObject.h"

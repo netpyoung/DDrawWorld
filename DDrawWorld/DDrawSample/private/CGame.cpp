@@ -1,4 +1,4 @@
-#include "ddrawsample/precompiled.h"
+#include "ddrawsample/precompiled_ddrawsample.h"
 #include "ddrawlib/CDDraw.h"
 #include "ddrawsample/CGame.h"
 #include "Util/Util.h"

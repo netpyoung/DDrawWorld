@@ -40,8 +40,8 @@ project "Util"
    includedirs {"Util/public",      "Util/private" }
    files       {"Util/public/**.h", "Util/private/**"}
 
-   pchheader "Util/precompiled.h"
-   pchsource "Util/private/precompiled.cpp"
+   pchheader "Util/precompiled_util.h"
+   pchsource "Util/private/precompiled_util.cpp"
 
    filter "configurations:Debug"
       defines { "DEBUG" }
@@ -67,8 +67,8 @@ project "ImageData"
    includedirs {"ImageData/public",      "ImageData/private" }
    files       {"ImageData/public/**.h", "ImageData/private/**"}
 
-   pchheader "ImageData/precompiled.h"
-   pchsource "ImageData/private/precompiled.cpp"
+   pchheader "ImageData/precompiled_imagedata.h"
+   pchsource "ImageData/private/precompiled_imagedata.cpp"
 
    filter "configurations:Debug"
       defines { "DEBUG" }
@@ -102,8 +102,8 @@ project "DDrawLib"
    includedirs {"DDrawLib/public",      "DDrawLib/private" }
    files       {"DDrawLib/public/**.h", "DDrawLib/private/**"}
 
-   pchheader "ddrawlib/precompiled.h"
-   pchsource "DDrawLib/private/precompiled.cpp"
+   pchheader "ddrawlib/precompiled_ddrawlib.h"
+   pchsource "DDrawLib/private/precompiled_ddrawlib.cpp"
 
    filter "configurations:Debug"
       defines { "DEBUG" }
@@ -133,8 +133,8 @@ project "DDrawSample"
    includedirs {"DDrawSample/public",      "DDrawSample/private",    "DDrawSample/Resource"}
    files       {"DDrawSample/public/**.h", "DDrawSample/private/**", "DDrawSample/Resource/**"}
 
-   pchheader "ddrawsample/precompiled.h"
-   pchsource "DDrawSample/private/precompiled.cpp"
+   pchheader "ddrawsample/precompiled_ddrawsample.h"
+   pchsource "DDrawSample/private/precompiled_ddrawsample.cpp"
 
    filter "configurations:Debug"
       defines { "DEBUG" }

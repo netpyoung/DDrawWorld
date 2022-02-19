@@ -1,4 +1,4 @@
-#include "ddrawsample/precompiled.h"
+#include "ddrawsample/precompiled_ddrawsample.h"
 #include <iostream>
 
 #include "Util/QueryPerfCounter.h"

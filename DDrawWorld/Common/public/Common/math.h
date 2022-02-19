@@ -11,7 +11,7 @@ namespace Common
 		inline	int2	operator -(const int2& v);
 		inline	int2	operator *(float f);
 		inline	int2	operator /(float f);
-		inline	int2	int2::operator *(const int2& v);
+		inline	int2	operator *(const int2& v);
 	};
 
 	inline bool int2::operator==(const int2& v)

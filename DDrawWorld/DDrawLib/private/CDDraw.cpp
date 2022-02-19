@@ -1,4 +1,4 @@
-#include "ddrawlib/precompiled.h"
+#include "ddrawlib/precompiled_ddrawlib.h"
 #include "ddrawlib/CDDraw.h"
 #include "Util/CTGAImage.h"
 #include "Common/math.h"

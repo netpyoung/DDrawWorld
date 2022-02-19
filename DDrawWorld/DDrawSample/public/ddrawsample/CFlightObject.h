@@ -1,5 +1,5 @@
 #pragma once
-#include "ddrawsample/precompiled.h"
+#include "ddrawsample/precompiled_ddrawsample.h"
 #include "Common/math.h"
 
 using namespace Common;
@@ -68,7 +68,7 @@ namespace DDrawSample
 		{
 			return m_interpolatedPos;
 		}
-		inline const int2& CFlightObject::GetPos() const
+		inline const int2& GetPos() const
 		{
 			return m_curPos;
 		}

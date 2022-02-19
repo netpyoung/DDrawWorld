@@ -1,4 +1,4 @@
-#include "Util/precompiled.h"
+#include "Util/precompiled_util.h"
 #include "Util/QueryPerfCounter.h"
 
 namespace Util::QueryPerfCounter

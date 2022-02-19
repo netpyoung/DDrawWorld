@@ -1,1 +1,0 @@
-#include "ddrawsample/precompiled.h"

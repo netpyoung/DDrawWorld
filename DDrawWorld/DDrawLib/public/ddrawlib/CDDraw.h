@@ -1,5 +1,5 @@
 #pragma once
-#include "ddrawlib/precompiled.h"
+#include "ddrawlib/precompiled_ddrawlib.h"
 #include "Common/math.h"
 
 using namespace Common;

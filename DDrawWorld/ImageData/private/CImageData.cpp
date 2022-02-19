@@ -1,4 +1,4 @@
-#include "ImageData/precompiled.h"
+#include "ImageData/precompiled_imagedata.h"
 #include "ImageData/CImageData.h"
 
 namespace ImageData
