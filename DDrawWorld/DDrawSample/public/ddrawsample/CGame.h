@@ -1,7 +1,9 @@
 #pragma once
-#include "ddrawsample/precompiled_ddrawsample.h"
+
+#include "Const.h"
 #include "Common/math.h"
-#include "ddrawsample/Const.h"
+
+using namespace Common;
 
 namespace DDrawLib
 {
@@ -46,8 +48,6 @@ namespace DDrawSample
 		}
 	};
 }
-
-using namespace Common;
 
 namespace DDrawSample
 {

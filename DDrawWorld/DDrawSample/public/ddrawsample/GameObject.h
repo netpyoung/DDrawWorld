@@ -1,6 +1,4 @@
 #pragma once
-#include "ddrawsample/precompiled_ddrawsample.h"
-
 namespace ImageData
 {
 	class CImageData;

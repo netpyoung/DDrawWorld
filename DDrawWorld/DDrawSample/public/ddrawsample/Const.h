@@ -1,5 +1,4 @@
 #pragma once
-#include "ddrawsample/precompiled_ddrawsample.h"
 
 namespace DDrawSample::Const
 {

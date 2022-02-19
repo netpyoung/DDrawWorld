@@ -1,4 +1,7 @@
-#include "Util/precompiled_util.h"
+#pragma once
+
+#include <Windows.h>
+#include "Common/sharedapi.h"
 
 namespace Util::QueryPerfCounter
 {

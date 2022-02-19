@@ -1,5 +1,5 @@
 #pragma once
-#include "Util/precompiled_util.h"
+#include "Common/sharedapi.h"
 
 namespace Util
 {

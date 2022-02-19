@@ -1,4 +1,8 @@
-#include "ImageData/precompiled_imagedata.h"
+#pragma once
+#include <cstddef>
+#include <cstdint>
+#include <windows.h>
+#include "Common/sharedapi.h"
 
 namespace ImageData
 {

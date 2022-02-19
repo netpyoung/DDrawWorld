@@ -1,8 +1,12 @@
 #pragma once
-#include "ddrawlib/precompiled_ddrawlib.h"
 #include "Common/math.h"
+#include "Common/sharedapi.h"
 
 using namespace Common;
+struct IDirectDraw;
+struct IDirectDraw7;
+struct IDirectDrawSurface7;
+struct IDirectDrawClipper;
 
 namespace ImageData
 {
